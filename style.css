@@ -983,11 +983,39 @@ button {
 /* #endregion */
 
 
-@media (max-width: 580px) {
+@media (max-width: 768px) {
   .footer-newsletter input {
     width: 100%;
   }
 }
 
+
+/* #region PRODUCT PAGE MOBILE */
+
+@media (max-width: 768px) {
+  .product-page {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .product-gallery {
+    order: 1; 
+  }
+
+  .product-info {
+    order: 2;
+  }
+
+  .details-text {
+    order: 3; 
+  }
+
+  .materials-section {
+    order: 4;
+  }
+}
+
+/* #endregion */
 
 /* #endregion */
