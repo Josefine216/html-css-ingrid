@@ -31,8 +31,8 @@
 
             <!--right column-->
             <div class="right-column">               
-                <span>🔍</span>
-                <span>👤 My site</span>
+                <span class="nav-icon search-desktop">🔍</span>
+                <span class="nav-icon profile-desktop">👤 My site</span>
                 <label for="cart-toggle" class="desktop-cart-icon">🛒</label>               
             </div>
         </div>
@@ -40,6 +40,14 @@
         <!--Bottom rectangle-->
         <nav class="navbar">
             <label for="menu-toggle" class="close-menu">✕</label>
+
+            <div class="mobile-menu-actions">
+                <div class="mobile-search-wrapper">
+                <span class="search-field-icon">🔍</span>
+                <input type="search" placeholder="Search here..." class="mobile-search-input">
+            </div>
+            <div class="mobile-action-item">👤 My site</div>
+</div>
 
             <ul>
                 <h3>CATEGORIES:</h3>
@@ -63,17 +71,20 @@
             </div>
 
             <div class="card-one">
-                <div class="jacket-container">
-                    <img src="images/homepage-jacket-1.png" alt="Scott gore-tex jacket decoration image" class="jacket-left">
-                    <img src="images/homepage-jacket-2.png" alt="Forest fleece jacket decoration image" class="jacket-right">
-                </div>
                 <a href="view-all-products.html" class="button">View All Products</a>
             </div>
 
             <div class="card-two">
                 <img src="images/homepage-jacket-3.png" alt="Sailor jacket decoration image" class="sailor-jacket">
-                <h2>FRONT PROOF</h2>
-                <p>Some text here as well</p>
+                <div class="card-two-text">
+                    <h2>SAILOR JACKET</h2>
+                    <p>100% waterproof and confortable. It's a sertified bluesign-product.</p>
+                </div>
+            </div>
+
+            <div class="card-images">
+                <img src="images/homepage-jacket-1.png" alt="Scott gore-tex jacket decoration image" class="jacket-left">
+                <img src="images/homepage-jacket-2.png" alt="Forest fleece jacket decoration image" class="jacket-right">
             </div>
         </section>
 
