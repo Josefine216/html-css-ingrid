@@ -986,13 +986,27 @@ button {
 
 /* #region GRID MOBILE */
 @media (max-width: 575px) {
+  
+  .new-arrivals {
+    padding: 2rem 0.5rem;
+  }
+
+  .new-arrivals h2 {
+    font-size: 1.8rem;  
+    margin-bottom: 1.5rem;
+  }
+  
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; 
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem; 
   }
 
   .product-card {
-    padding: 12px; 
+    padding: 8px; 
+  }
+
+  .product-card .description {
+    display: none;
   }
 }
 
