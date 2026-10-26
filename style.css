@@ -1268,4 +1268,27 @@ button {
 
 /* #endregion */
 
+/* #region CHECKOUT MOBILE */
+@media (max-width: 768px) {
+  
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .left-side-checkout {
+    order: 1;
+  }
+
+  .right-side-checkout {
+    order: 2;
+    background-color: transparent;
+    padding: 20px 0;
+  }
+
+  .right-side-checkout h2:first-child,
+  .desktop-only-product-info {
+    display: none;
+  }
+}
+/* #endregion */
 /* #endregion */
