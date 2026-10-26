@@ -17,7 +17,8 @@
         <!--Top rectangle-->
         <div class="header-top">
             <div class="left-column">
-                <label for="menu-toggle" class="hamburger">☰</label>
+                <label for="menu-toggle" class="hamburger" tabindex="0" role="button" aria-label="Open menu">☰</label>
+                
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/logo.png" width="125" alt="RainyDays Logo">
@@ -26,27 +27,32 @@
             </div>
 
             <!--right column-->
-            <div class="right-column">               
-                <span class="desktop-search-icon">🔍</span>
-                <span class="desktop-my-site-icon">👤 My site</span>
-                <label for="cart-toggle" class="desktop-cart-icon">🛒</label>               
+            <div class="right-column">
+                <a href="#" class="desktop-search-icon">
+                    <span class="sr-only">Search</span>🔍
+                </a>
+                <a href="login.html" class="desktop-my-site-icon">
+                    <span class="sr-only">Go to </span>👤 My site
+                </a>
+                <label for="cart-toggle" class="desktop-cart-icon" tabindex="0" role="button" aria-label="Open shopping cart">🛒</label>   
             </div>
         </div>
 
         <!--Bottom rectangle-->
-        <nav class="navbar">
-            <label for="menu-toggle" class="close-menu">✕</label>
+        <nav class="navbar" aria-label="Main navigation">
+            <label for="menu-toggle" class="close-menu" tabindex="0" role="button" aria-label="Close menu">✕</label>
 
-            <div class="mobile-menu-actions">
-                <div class="mobile-search-wrapper">
-                <span class="search-field-icon">🔍</span>
-                <input type="search" placeholder="Search here..." class="mobile-search-input">
+        <div class="mobile-menu-actions">
+            <div class="mobile-search-wrapper">
+                <span class="search-field-icon" aria-hidden="true">🔍</span>
+                <label for="mobile-search" class="sr-only">Search here</label>
+                <input type="search" class="mobile-search-input" id="mobile-search" placeholder="Search here...">
             </div>
-            <div class="mobile-action-item">👤 My site</div>
-</div>
+            <a href="login.html" class="mobile-action-item">👤 My site</a>
+        </div>
 
+            <h3>CATEGORIES:</h3>
             <ul>
-                <h3>CATEGORIES:</h3>
                 <li><a href="/men">Men</a></li>
                 <li><a href="/women">Women</a></li>
                 <li><a href="/collections">Collections</a></li>
@@ -55,7 +61,7 @@
             </ul>
         </nav>
 
-    </header>     
+    </header>   
 
     <main class="product-page">
         <!-- Left side of the page with the images -->
@@ -137,13 +143,17 @@
         <h2>Name of item</h2>
         <p>Colour / Size </p>
         <h2>Price</h2>
+        <a href="checkout.html" class="button">Checkout</a>
     </aside>
 
     <footer>
-        <div class="footer-logo"><img src="images/logo.png" width="125" alt="RainyDays Logo"></div>
+        <div class="footer-logo">
+            <img src="images/logo.png" width="125" alt="RainyDays Logo">
+        </div>
+
         <div class="footer-container">
             <div class="footer-wrapper">
-                <h4>HELP</h4>
+                <h3>HELP</h3>
                 <a href="#">Customer Support Centre</a>
                 <a href="#">General FAQ</a>
                 <a href="#">Contact Us</a>
@@ -151,7 +161,7 @@
             </div>
 
             <div class="footer-wrapper">
-                <h4>MY ACCOUNT</h4>
+                <h3>MY ACCOUNT</h3>
                 <a href="#">Sign in / Sign up</a>
                 <a href="#">Order tracking</a>
                 <a href="#">Returns & Refunds / Withdrawal</a>
@@ -159,14 +169,14 @@
             </div>
 
             <div class="footer-wrapper">
-                <h4>SHOP MORE</h4>
+                <h3>SHOP MORE</h3>
                 <a href="#">Find a store</a>
                 <a href="#">Gift cards</a>
                 <a href="#">Get the App</a>
             </div>
 
             <div class="footer-wrapper">
-                <h4>ABOUT US</h4>
+                <h3>ABOUT US</h3>
                 <a href="#">Who we are</a>
                 <a href="#">Sustainability</a>
                 <a href="#">Careers</a>
@@ -175,31 +185,31 @@
 
             <div class="footer-newsletter">
                 <div class="icon-and-info">
-                    <div class="Arrow icon">➡️</div>
+                    <div class="Arrow icon" aria-hidden="true">➡️</div>
                     <div class="newsletter-info">
-                        <h2>Get your weekly dose of adventure</h2>
+                        <h3>Get your weekly dose of adventure</h3>
                         <p>Recieve updates on product drops, exclusive offers,
                         events, and more - delivered right to your inbox
                         </p>
                     </div>
                 </div>
                 <div class="email-input-and-sign-me-up-button">
-                    <input type="email" 
-                    placeholder="Sign up for our newsletter (email)">
-                    <button>SIGN ME UP</button>
+                    <label for="footer-email" class="sr-only">Sign up for our newsletter (email)</label>
+                    <input type="email" id="footer-email" placeholder="Sign up for our newsletter (email)">
+                    <button type="submit">SIGN ME UP</button>
                 </div>
             </div>
             
             <div class="webright">
-                <a href="#">Your Privacy Choices   |</a>
-                <a href="#">Cookie Policy |</a>
-                <a href="#">Privacy Policy |</a>
-                <a href="#">Terms & Conditions |</a>
-                <a href="#">Terms of use |</a>
-                <a href="#">Accesibility |</a>
-                <a href="#">Recall info |</a>
-                <a href="#">Terms of use |</a>
-                <a href="#">Sitemap |</a>
+                <a href="#">Your Privacy Choices</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Recall info</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Sitemap</a>
                 <a href="#">rainydays.com</a>
             </div>  
         </div>

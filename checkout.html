@@ -8,54 +8,221 @@
 </head>
 
 <body>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <input type="checkbox" id="cart-toggle" class="cart-toggle">
 
-    <header class="main-header">
+    <div class="checkout-container">
 
-        <!--Top rectangle-->
-        <div class="header-top">
-            <div class="left-column">
-                <label for="menu-toggle" class="hamburger">☰</label>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" width="125" alt="RainyDays Logo">
-                    </a>
+        <div class="left-side-checkout">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" width="200" alt="RainyDays Logo">
+                </a>
+            </div>
+
+            <section class="checkout-section">
+                <div class="contact-header">
+                    <h2>Contact</h2>
+                    <a href="login.html" class="signin-link">Sign in</a>
                 </div>
-            </div>
 
-            <!--right column-->
-            <div class="right-column">               
-                <span class="desktop-search-icon">🔍</span>
-                <span class="desktop-my-site-icon">👤 My site</span>
-                <label for="cart-toggle" class="desktop-cart-icon">🛒</label>               
-            </div>
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
+
+                <label class="checkbox">
+                    <input type="checkbox" name="offers">
+                    <span>Yes, give me pre-access to Rainydays' product drops, exclusive offers, events, and more - delivered right to your inbox.</span>
+                </label>
+            </section>
+
+
+            <section class="checkout-section">
+                <h2>Delivery</h2>
+
+                <label for="country" class="sr-only">Country/Region</label>
+                <input type="text" id="country" name="country" placeholder="Country/Region">
+
+                <div class="input-row">
+                    <div class="two-on-same-line">
+                        <label for="first-name" class="sr-only">First name</label>
+                        <input type="text" id="first-name" name="firstname" placeholder="First name">
+                    </div>
+                    <div class="two-on-same-line">
+                        <label for="last-name" class="sr-only">Last name</label>
+                        <input type="text" id="last-name" name="lastname" placeholder="Last name">
+                    </div>
+                </div>
+
+                <label for="company" class="sr-only">Company (optional)</label>
+                <input type="text" id="company" placeholder="Company (optional)">
+
+                <label for="address" class="sr-only">Address</label>
+                <input type="text" id="address" placeholder="Address">
+
+                <label for="apartment" class="sr-only">Apartment, suite, etc. (optional)</label>
+                <input type="text" id="apartment" placeholder="Apartment, suite, etc. (optional)">
+
+                <div class="input-row">
+                    <div class="two-on-the-same-line">
+                        <label for="postal-code" class="sr-only">Postal code</label>
+                        <input type="text" id="postal-code" placeholder="Postal code">
+                    </div>
+                    <div class="two-on-same-line">
+                        <label for="city" class="sr-only">City</label>
+                        <input type="text" id="city" placeholder="City">
+                    </div>
+                </div>
+
+                <label for="phone" class="sr-only">Phone</label>
+                <input type="text" id="phone" placeholder="Phone">
+            </section>
+
+            <section class="checkout-section">
+                <h2>Shipping method</h2>
+                <label for="shipping-msg" class="sr-only">Shipping message</label>
+                <input type="text" id="shipping-msg" placeholder="Enter your shipping address to view available shipping methods.">
+            </section>
+
+            <section class="checkout-section">
+                <h2>Payment</h2>
+                <div class="payment-option">
+                    <label class="payment-label">
+                        <input type="radio" name="payment-method" value="credit-card" checked>
+                        <span>Credit card</span>
+                    </label>
+
+                    <div class="credit-card-fields">
+                        <label for="card-number" class="sr-only">Card number</label>
+                        <input type="text" id="card-number" placeholder="Card number">
+
+                        <div class="input-row">
+                            <div class="two-on-same-line">
+                                <label for="expiry" class="sr-only">MM/YY</label>
+                                <input type="text" id="expiry" placeholder="MM/YY">
+                            </div>
+                            <div class="two-on-same-line">
+                                <label for="cvc" class="sr-only">Security code</label>
+                                <input type="text" id="cvc" placeholder="Security code">
+                            </div>
+                        </div>
+
+                        <label for="card-name" class="sr-only">Name on card</label>
+                        <input type="text" id="card-name" placeholder="Name on card">
+                    </div>
+                </div>
+
+                <div class="payment-option">
+                    <label class="payment-label">
+                        <input type="radio" name="payment-method" value="klarna">
+                        <span>Klarna</span>
+                    </label>
+                </div>
+            </section>
+
+            <label class="checkbox">
+                <input type="checkbox" name="Terms-and-conditions">
+                <span> I have read and agree to the Terms & Conditions</span>
+            </label>
+            <button class="pay-now-button">Pay now</button>
+
+
         </div>
 
-        <!--Bottom rectangle-->
-        <nav class="navbar">
-            <label for="menu-toggle" class="close-menu">✕</label>
+        <div class="right-side-checkout">
+            <h2>(ITEM INFO)</h2>
 
-            <div class="mobile-menu-actions">
-                <div class="mobile-search-wrapper">
-                <span class="search-field-icon">🔍</span>
-                <input type="search" placeholder="Search here..." class="mobile-search-input">
+            <div class="discount-row">
+                <label for="discount" class="sr-only">Discount code or gift card</label>
+                <input type="text" id="discount" name="discount-code" placeholder="Discount code or gift card">
             </div>
-            <div class="mobile-action-item">👤 My site</div>
-</div>
 
-            <ul>
-                <h3>CATEGORIES:</h3>
-                <li><a href="/men">Men</a></li>
-                <li><a href="/women">Women</a></li>
-                <li><a href="/collections">Collections</a></li>
-                <li><a href="/outlet">Outlet</a></li>
-                <li><a href="/info">Info</a></li>
-            </ul>
-        </nav>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>(NOK)</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Enter shipping address</span>
+            </div>
 
-    </header>     
+            <div class="summary-row total-row">
+                <h2>Total</h2>
+                <h2>(NOK)</h2>
+            </div>
 
+            <img src="images/pexels-vladbagacian-2819553.jpg" class="checkout-img" alt="Decorative Image">
+            <h2>Pushing The</h2>
+            <h2>Comfort zone</h2>
+            <img src="images/background.jpg" class="checkout-img" alt="Decorative Image">
+        </div>
 
+    </div>
 
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.png" width="125" alt="RainyDays Logo">
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h3>HELP</h3>
+                <a href="#">Customer Support Centre</a>
+                <a href="#">General FAQ</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping & Delivery</a>
+            </div>
+
+            <div class="footer-wrapper">
+                <h3>MY ACCOUNT</h3>
+                <a href="#">Sign in / Sign up</a>
+                <a href="#">Order tracking</a>
+                <a href="#">Returns & Refunds / Withdrawal</a>
+                <a href="#">Product care</a>
+            </div>
+
+            <div class="footer-wrapper">
+                <h3>SHOP MORE</h3>
+                <a href="#">Find a store</a>
+                <a href="#">Gift cards</a>
+                <a href="#">Get the App</a>
+            </div>
+
+            <div class="footer-wrapper">
+                <h3>ABOUT US</h3>
+                <a href="#">Who we are</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Careers</a>
+                <a href="#">Newsroom</a>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="icon-and-info">
+                    <div class="Arrow icon" aria-hidden="true">➡️</div>
+                    <div class="newsletter-info">
+                        <h3>Get your weekly dose of adventure</h3>
+                        <p>Recieve updates on product drops, exclusive offers,
+                        events, and more - delivered right to your inbox
+                        </p>
+                    </div>
+                </div>
+                <div class="email-input-and-sign-me-up-button">
+                    <label for="footer-email" class="sr-only">Sign up for our newsletter (email)</label>
+                    <input type="email" id="footer-email" placeholder="Sign up for our newsletter (email)">
+                    <button type="submit">SIGN ME UP</button>
+                </div>
+            </div>
+            
+            <div class="webright">
+                <a href="#">Your Privacy Choices</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Recall info</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Sitemap</a>
+                <a href="#">rainydays.com</a>
+            </div>  
+        </div>
+
+    </footer>
 </body>
