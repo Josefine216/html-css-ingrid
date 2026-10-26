@@ -804,7 +804,7 @@ button {
   width: 100%;
 }
 
-.logo {
+.checkout-logo {
   padding: 2rem;
 }
 
@@ -1004,6 +1004,10 @@ button {
 .pay-now-button:focus-visible {
   outline: 3px solid #000000;
   outline-offset: 2px;
+}
+
+.mobile-only {
+  display: none;
 }
 
 /* #endregion */
@@ -1298,52 +1302,33 @@ button {
 
 /* #region CHECKOUT MOBILE */
 @media (max-width: 768px) {
-  
   .checkout-container {
+    display: flex;
     flex-direction: column;
+    gap: 1.5rem;
   }
-
-  .left-side-checkout {
-    order: 1;
+  
+  .mobile-only {
+    display: block;
+    padding: 0 20px;
   }
-
+  
   .right-side-checkout {
-    background-color: transparent;
-    padding: 0;
-    border: none;
-  }
-
-  .right-side-checkout h2:first-child,
-  .desktop-only-product-info {
     display: none;
   }
 
-  .left-side-checkout {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .left-side-checkout .checkout-section {
-    order: 1;
-  }
-
-  .right-side-checkout .discount-row,
-  .right-side-checkout .summary-row {
-    order: 2;
-    padding: 0 20px;
-  }
-
   .left-side-checkout .checkbox {
-    order: 3;
+    padding: 0 20px;
+    margin-top: 10px;
   }
 
   .left-side-checkout .pay-now-button {
-    order: 4;
     margin-top: 15px;
     margin-bottom: 60px;
     align-self: center;
+    width: 80%;
+    max-width: 400px;
   }
-
 }
 /* #endregion */
 /* #endregion */
