@@ -45,6 +45,10 @@ header {
   gap: 2rem;
 }
 
+.right-column img {
+  filter: brightness(0) invert(1);
+}
+
 .right-column span,
 .right-column a {
   font-size: larger;
