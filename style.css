@@ -789,6 +789,10 @@ button {
   width: 100%;
 }
 
+.checkout-container h1 {
+  padding: 1rem;
+}
+
 .checkout-logo {
   padding: 2rem;
 }
