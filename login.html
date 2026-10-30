@@ -8,12 +8,13 @@
 </head>
 
 <body>
+    
     <header class="main-header">
 
         <!--Top rectangle-->
         <div class="header-top">
             <div class="left-column">
-                <label for="menu-toggle" class="hamburger" tabindex="0" role="button" aria-label="Open menu">☰</label>
+                <label for="menu-toggle" class="hamburger" aria-label="Open menu">☰</label>
                 
                 <div class="logo">
                     <a href="index.html">
@@ -30,21 +31,27 @@
                 <a href="login.html" class="desktop-my-site-icon">
                     <img src="icons/user-regular-full.svg" alt="Profile" width="34" height="34">
                 </a>
-                <label for="cart-toggle" class="desktop-cart-icon" tabindex="0" role="button" aria-label="Open shopping cart"><img src="icons/cart-shopping-solid-full.svg" alt="" width="34" height="34"></label>   
+                <label for="cart-toggle" class="desktop-cart-icon" aria-label="Open shopping cart">
+                    <img src="icons/cart-shopping-solid-full.svg" alt="" width="34" height="34">
+                </label>   
             </div>
         </div>
 
         <!--Bottom rectangle-->
         <nav class="navbar" aria-label="Main navigation">
-            <label for="menu-toggle" class="close-menu" tabindex="0" role="button" aria-label="Close menu">✕</label>
+            <label for="menu-toggle" class="close-menu" aria-label="Close menu">✕</label>
 
         <div class="mobile-menu-actions">
             <div class="mobile-search-wrapper">
-                <span class="search-field-icon" aria-hidden="true">🔍</span>
-                <label for="mobile-search" class="sr-only">Search here</label>
+                <a href="#" class="mobile-search-icon">
+                    <img src="icons/magnifying-glass-solid-full.svg" alt="Search here" width="34" height="34">
+                </a>
                 <input type="search" class="mobile-search-input" id="mobile-search" placeholder="Search here...">
             </div>
-            <a href="login.html" class="mobile-action-item">👤 My site</a>
+                <a href="login.html" class="mobile-profile">
+                    <img src="icons/user-regular-full.svg" alt="" width="34" height="34">
+                    My Profile
+                </a>
         </div>
 
             <h3>CATEGORIES:</h3>
