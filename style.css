@@ -9,6 +9,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .main-header {
   width: 100%;
 }
@@ -981,6 +987,14 @@ button {
   font-size: 1.3rem;
 }
 
+.inspirational-quote {
+  font-size: 4vw;
+  font-weight: 200;
+  line-height: 1;
+  padding: 2rem;
+  line-height: 13vh;
+}
+
 .pay-now-button {
   background-color: #000000;
   color: #ffffff;
@@ -993,6 +1007,8 @@ button {
   max-width: 80%;
   display: block;
   align-self: center;
+  text-align: center;
+  text-decoration: none;
   margin-top: 15px;
   margin-bottom: 40px;
 }
@@ -1010,6 +1026,13 @@ button {
   display: none;
 }
 
+/* #endregion */
+
+/* #region LOGIN */
+.information-text-login {
+  margin-bottom: 30rem;
+  padding: 2rem;
+}
 /* #endregion */
 
 /* #region INTERACTIVE STATES */
