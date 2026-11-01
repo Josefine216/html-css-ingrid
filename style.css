@@ -632,6 +632,7 @@ footer {
   text-align: center;
   font-size: 1.3rem;
   max-width: 16rem;
+  cursor: pointer;
 }
 
 .shopping-cart {
@@ -1072,7 +1073,7 @@ button {
 }
 
 .pay-now-button:hover {
-  background-color: #1a1a1a; 
+  background-color:#191919; 
 }
 
 .email-input-and-sign-me-up-button button:hover {
